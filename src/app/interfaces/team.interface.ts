@@ -1,4 +1,5 @@
-import { Player, Countries } from './player';
+import { Player, Countries } from "./player.interface";
+
 
 
 export interface Team{
