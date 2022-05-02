@@ -46,7 +46,7 @@
         </table>
     </div>
 </section>
-<app-player-dialog *ngIf="showModal"  (closeDialog)="closeDialog()"></app-player-dialog>
+<app-player-dialog *ngIf="showModal"  [player]="selectedPlayer" (closeDialog)="closeDialog()"></app-player-dialog>
 
 
 <!-- 

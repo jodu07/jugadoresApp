@@ -24,7 +24,7 @@ export class PlayerTableComponent implements OnInit {
 
   newPlayer(){
     this.showModal = true;
-   // this.selectedPlayer = [];
+    this.selectedPlayer = null;
     setTimeout(() => {
       window.location.replace('#open-modal');
     });
@@ -49,7 +49,7 @@ export class PlayerTableComponent implements OnInit {
         ...teams[0],
         players: [...moddifieldPlayers]
       };
-     // this.playerService.deletePlayer(player.$key);
+      this.playerService.deletePlayer(player.$key);
       this.teamService.editTeam(formattedTeam);      
     });
   }
